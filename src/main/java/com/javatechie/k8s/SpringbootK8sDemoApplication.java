@@ -13,7 +13,11 @@ public class SpringbootK8sDemoApplication {
 	public String displayMessage(){
 		return "Congratulation you successfully deployed your application to kubernetes !!";
 	}
-
+        
+	@GetMapping("/ex")
+	public String displayEx(){
+		return 0 / 10;
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootK8sDemoApplication.class, args);
 	}
